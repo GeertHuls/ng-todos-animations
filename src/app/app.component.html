@@ -27,7 +27,7 @@
            [@itemEnter]="state">
         <div class="identitfier">
           <p>{{ item }}</p>
-          <a>X</a>
+          <a (click)="removeItem($event, i)">X</a>
         </div>
       </div>
     </div>

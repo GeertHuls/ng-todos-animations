@@ -65,4 +65,8 @@ export class AppComponent {
     this.ourItems.push(event.target.value);
     event.target.value = '';
   }
+
+  removeItem(event, i) {
+    this.ourItems.splice(i, 1);
+  }
 }

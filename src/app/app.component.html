@@ -21,9 +21,12 @@
 <div class="row">
   <div class="small-12 medium-6">
     <div class="panel nplr">
-      <div class="item-container">
+      <div class="item-container"
+           *ngFor="let item of ourItems; let i= index"
+           [attr.data-index]="i"
+           [@itemEnter]="state">
         <div class="identitfier">
-          <p>Item here</p>
+          <p>{{ item }}</p>
           <a>X</a>
         </div>
       </div>
